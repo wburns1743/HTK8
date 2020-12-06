@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTK 8 Assessment</title>
+</head>
+
+<body>
+
+  <h1>HTK 8 Assessment</h1>
+  <div id="calc-holder">
+    <form class="" action="index.html" method="post">
+
+      <table>
+        <tr>
+          <td>
+            <label for="vjump">Vertical Jump (inches) </label>
+          </td>
+          <td>
+
+            <input id="vjump" type="number" min="1" max="100">
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dlMax">Deadlift 3RM</label>
+          </td>
+          <td>
+            <input id="dlMax" type="number" min="1" max="600">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="ohPress">Overhead Press 3RM</label>
+          </td>
+          <td>
+            <input id="ohPress" type="number" min="1" max="400">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pullMax">Pull-ups MAX</label>
+          </td>
+          <td>
+            <input id="pullMax" type="number" min="1" max="100">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pushMax">Push-ups MAX</label>
+          </td>
+          <td>
+            <input id="pushMax" type="number" min="1" max="100">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="sprint">400m sprint (seconds)</label>
+          </td>
+          <td>
+            <input id="sprint" type="number" min="1" max="150" placeholder="sec">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="shuttle">50m shuttle</label>
+          </td>
+          <td>
+            <input id="shuttle" type="number" min="1" max="100" placeholder="sec">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="run">1.5 mile run</label>
+          </td>
+          <td>
+            <input id="run-min" type="number" min="1" max="100" placeholder="min">
+          </td>
+          <td>
+            <input id="run-sec" type="number" min="1" max="60" placeholder="sec">
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <button onclick="HTKcalc()">Submit</button>
+  </div>
+
+  <div id="Results">
+    <h1>Results</h1>
+    <table id="result-scores">
+      <tr>
+        <td><label for="jump-score">Vertical Jump</label></td>
+        <td><span id="jump-score" name="jump-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="dl-score">Deadlift</label></td>
+        <td><span id="dl-score" name="dl-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="press-score">Overhead Press</label></td>
+        <td><span id="press-score" name="press-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="pullup-score">Pull-ups</label></td>
+        <td><span id="pullup-score" name="pullup-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="pushup-score">Push-ups</label></td>
+        <td><span id="pushup-score" name="pushup-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="sprint-score">400m Sprint</label></td>
+        <td><span id="sprint-score" name="sprint-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="shuttle-score">50m Shuttle</label></td>
+        <td><span id="shuttle-score" name="shuttle-score">0 / 100</span></td>
+      </tr>
+      <tr>
+        <td><label for="run-score">1.5 Mile Run</label></td>
+        <td><span id="run-score" name="run-score">0 / 100</span></td>
+      </tr>
+    </table>
+        <br>
+    <table id="composite-score">
+      <tr>
+        <td><label for="composite">Composite Score</label></td>
+        <td><span id="composite" name="composite">0 / 700</span></td>
+      </tr>
+    </table>
+
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
